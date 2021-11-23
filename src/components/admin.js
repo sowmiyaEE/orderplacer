@@ -1,6 +1,6 @@
 import React from 'react';
 import Orders from './orders.js';
-iport classs from classnames;
+import classs from 'classnames';
 import './css/admin.css';
 class admin extends React.Component{
 constructor(){super();this.rtext='ok';}
