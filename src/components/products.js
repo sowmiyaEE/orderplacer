@@ -20,7 +20,9 @@ return [{src:'er.jpg',rate:'25',description:'eer jfkljddkjfsjdfk fkjd',pid:'23'}
 
 render(){
   let queries=this.getproducts(this.state.search);        
-return(<div classs='ser' align="center">
+return(
+<div>
+<div classs='ser' align="center">
 <input type='text' id='searchid' classs='qinput'/>
 <button classs='search' onClick={() => this.setState({search:document.getElementById('searchid').value})}
 >search</button></div>
@@ -34,6 +36,7 @@ return(<div key={i} classs='singleproduct'>
 }
 )}
 
+</div>
 </div>)
 
 }
