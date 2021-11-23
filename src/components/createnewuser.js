@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
-
+import classs from classnames;
+import './css/create.css';
 
 
 class createnewuser extends React.Component{
@@ -17,11 +17,12 @@ render(){
 let paramas={name:'sow',password:'ddd'};
 let a=this.createnew(paramas.name,paramas.password);
 return(
+<div classs='tyu'>
+<label classs='uuid'>a</label>
 
-<label>a</label>
-
-<Link to='/dashboard' params={{uid:a.uid},{selector:'products'}}>
+<Link classs='gothr' to='/dashboard' params={{uid:a.uid},{selector:'products'}}>
 GO to dashboard</Link>
+</div>
 
 );
 }
