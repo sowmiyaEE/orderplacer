@@ -3,6 +3,8 @@ display:block;overflow:hidden;
 width:100%;
 flex-wrap:none;
 }
+.visibled{visibility:visible;}
+.hidded{visibility:hidden;}
 .rose{
      color:red;
 background-color:transparent;border:1px solid red;

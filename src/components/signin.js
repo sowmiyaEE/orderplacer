@@ -92,13 +92,27 @@ return(<input type='text' onChange={handlechange} className={color} color={green
 }
 
  class signin extends React.Component{
+
 constructor(){
+
 super();
-  this.submitrelease=false,this.name='',this.pass='',this.age='',this.phone='';}
- 
+  this.submitrelease=false,this.name='',this.pass='',this.age='',this.phone='';
+this.state={hider:'hidded'};
+}
+ sethider(v){this.setState({hider:v});}
 submit(value){
-   console.log(value);
- 
+   
+ switch(value.index){
+case 'name':{this.name=value.cvalue};
+ case 'phone':{this.phone=value.cvalue};
+case 'age':{this.age=value.cvalue}; 
+case 'pass':{this.pass=value.cvalue};
+}
+if(this.name!=null && this.phone!=null && this.age!=null && this.pass!=null)
+{
+ this.sethider('visibled');
+}
+else this.sethider('hidded');
 }
 
 render(){
@@ -121,9 +135,12 @@ let Signno=this.Signno();*/
 <Password submit={this.submit}/>
 <small>has digits and letters</small>
 <br/>
-<Link to='/createnewuser' params={{cname:this.name},{cage:this.age},{cpass:this.pass},{cphone:this.phone}}>Create</Link>
+<Link to='/createnewuser' className={this.state.hider} params={{cname:this.name},{cage:this.age},{cpass:this.pass},{cphone:this.phone}}>Create</Link>
 </div>
 );
+
+}
+vlis(){
 
 }
 }
