@@ -6,8 +6,8 @@
  "engines": {
     "npm": "5.7.1",
     "node": "9.5.0"
-  }
-"scripts": {
+  },
+ "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
   "test": "react-scripts test --env=jsdom",
