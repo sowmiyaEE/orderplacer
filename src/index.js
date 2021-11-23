@@ -16,7 +16,7 @@ class Aapp extends React.Component
 {
 render(){
 return(
-    <><Router><div className="hess">
+    <Router><div className="hess">
 <h1>Orderer</h1>
               <Link to="/login" className='log02'>Login</Link>   
        <Link to="/signin" className='log02'>signin</Link>   
@@ -35,7 +35,7 @@ return(
 </Router>
     
 
-</>);
+);
 }
 }
 ReactDOM.render(<Aapp />,document.getElementById('app'));
