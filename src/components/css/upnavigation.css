@@ -1,0 +1,25 @@
+.container{display:flex;overflow:hidden;
+width:100%;
+flex-wrap:wrap;}
+
+.log0{color:orange;
+font-style:bold;
+font-size:30px;
+margin-left:45%;
+margin-right:2%;}
+
+.butto{margin:2%;
+padding:2%;
+color:violet;
+cursor:pointer;
+
+}
+
+.butto:hover{
+color:black;
+}
+.twobutto{
+margin-left:30%;
+padding:2%;
+border-right:1px solid white;
+}

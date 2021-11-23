@@ -1,0 +1,20 @@
+.rose{
+     color:red;
+background-color:transparent;border:1px solid red;
+}
+.leaf{
+color:green;background-color:transparent;border:1px solid green;
+}
+
+.coal{color:black;background-color:transparent;}
+
+.inlab{
+     width:80px;
+
+justify-content:left;
+margin:20px;
+}
+.input{
+justify-content:center;
+width:80px;
+}
