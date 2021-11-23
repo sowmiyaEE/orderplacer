@@ -12,7 +12,7 @@ this.uid=this.props.uid;
   }  
  render(){
 return(
-   <>
+   
 <div style={{width:'200px',height:'200px',width:'fixed',padding:'20px'}}>
  <img src={this.src} width="120px" height="120px" alt='image'/>
  <small>{this.description}</small>
@@ -20,7 +20,7 @@ return(
  <small>{this.name}</small>
 </div>
 
-</>
+
 );          
   }
 }export default  product;

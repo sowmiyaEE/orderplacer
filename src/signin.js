@@ -65,7 +65,7 @@ return <input type='text' onChange={this.handlechange} color={this.green}/>
 }}
 render(){
    return(
-  <>
+  
   <label>username</label>
   <signname/>
 
@@ -79,7 +79,7 @@ render(){
   <password/>
   <label>has digits and letters</label>
   <Link to='createnewuser' />
- </>
+
 );
 
 }

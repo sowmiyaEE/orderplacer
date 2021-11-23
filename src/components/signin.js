@@ -106,7 +106,7 @@ render(){
 let Signage=this.Signage();
 let Password=this.Password();
 let Signno=this.Signno();*/
-   return(<>
+   return(
 
   <label className='inlab' >username</label>
 <Signname submit={this.submit}/>
@@ -122,7 +122,7 @@ let Signno=this.Signno();*/
 <small>has digits and letters</small>
 <br/>
 <Link to='/createnewuser' params={{cname:this.name},{cage:this.age},{cpass:this.pass},{cphone:this.phone}}>Create</Link>
-</>
+
 );
 
 }

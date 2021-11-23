@@ -14,13 +14,13 @@ co(){
 
    render(){
   return(
-     <><div className="container">
+     <div className="container">
       <span className='log0'>{this.props.uid}</span>
 <div className="twobutto">
      <span className="butto" onClick={()=> this.props.chagestate('products')}>   products     </span>
      <span className="butto" onClick={()=> this.props.chagestate('orders')}>   orders       </span>
 </div>
-    </div> </>);
+    </div> );
       }
 }
 export default  upnavigation;

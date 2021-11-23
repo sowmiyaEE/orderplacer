@@ -25,7 +25,7 @@ else{
 
 render(){
 return(
-<>
+
    <Orders uid={'*'}/>
    Add products<div id='racediv' >
       src<input type='text'/>
@@ -35,7 +35,7 @@ return(
 <button onClick={this.addproduct}>ok</button>
   </div>
 <label id='msg'>{this.rtext}</label>
-</>
+
    
 );
 }

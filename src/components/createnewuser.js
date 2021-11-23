@@ -17,12 +17,12 @@ render(){
 let paramas={name:'sow',password:'ddd'};
 let a=this.createnew(paramas.name,paramas.password);
 return(
-<>
+
 <label>a</label>
 
 <Link to='/dashboard' params={{uid:a.uid},{selector:'products'}}>
 GO to dashboard</Link>
-</>
+
 );
 }
 

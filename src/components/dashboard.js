@@ -21,10 +21,10 @@ console.log('state of display',this.state.selector);
 }
 
 render(){
- return<><Upnavigation classs='navigator' chagestate={this.chagestate} {...this.props}  />
+ return(<Upnavigation classs='navigator' chagestate={this.chagestate} {...this.props}  />
 <br/>
 <div>{this.state.selector}</div>
-<Display {...this.props} classs='display' selector={this.state.selector} /></>;
+<Display {...this.props} classs='display' selector={this.state.selector} />);
 }
 
 }
