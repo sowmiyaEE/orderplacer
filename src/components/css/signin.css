@@ -1,3 +1,8 @@
+.ert{
+display:block;overflow:hidden;
+width:100%;
+flex-wrap:none;
+}
 .rose{
      color:red;
 background-color:transparent;border:1px solid red;

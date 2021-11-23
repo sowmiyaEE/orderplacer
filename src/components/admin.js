@@ -1,5 +1,7 @@
 import React from 'react';
 import Orders from './orders.js';
+iport classs from classnames;
+import './css/admin.css';
 class admin extends React.Component{
 constructor(){super();this.rtext='ok';}
 addproduct()
@@ -25,7 +27,7 @@ else{
 
 render(){
 return(
-
+<div classs='tyu'>
    <Orders uid={'*'}/>
    Add products<div id='racediv' >
       src<input type='text'/>
@@ -35,7 +37,7 @@ return(
 <button onClick={this.addproduct}>ok</button>
   </div>
 <label id='msg'>{this.rtext}</label>
-
+</div>
    
 );
 }
