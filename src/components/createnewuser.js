@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import classs from classnames;
+import classs from 'classnames';
 import './css/create.css';
 
 
