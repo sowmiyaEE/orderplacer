@@ -33,6 +33,7 @@
   "dns": "file:./src/mock/dns",
   "net": "file:./src/mock/net",
   "pg": "^8.7.1",
+  "libpq":"1.8.9";
   "psql": "0.0.1",
   "react": "^17.0.1",
   "react-dom": "^17.0.1",
