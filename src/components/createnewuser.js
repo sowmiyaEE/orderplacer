@@ -8,9 +8,11 @@ class createnewuser extends React.Component{
 
 createnew(name,pass){
  //database
+  
+
 const { Client } = require('pg');
 const client = new Client({
-  connectionString: 'postgres://nkkwpyccizwdsf:50269a422b86e5ddea3d4d366a4611e25948d85d5fe4a1e902bb0dcf3dd26e6b@ec2-52-54-23-130.compute-1.amazonaws.com:5432/ddf4gd8u37m2ag',
+  connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false
   }
@@ -24,6 +26,8 @@ client.query('insert into users values(id,this.props.cname,this.props.cphone,thi
  return ({msg:'successfully created new user'},{uid:id});
   client.end();
 });
+
+
 
 
 
