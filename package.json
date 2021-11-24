@@ -4,10 +4,10 @@
  "description": "",
  "main": "webpack.config.js",
  "engines": {
-    "npm": "6.14.4",
-    "node": "13.14.0"
-  },
-"scripts": {
+  "npm": "6.14.4",
+  "node": "13.14.0"
+ },
+ "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
   "start": "react-scripts start"
  },
@@ -30,11 +30,13 @@
  },
  "dependencies": {
   "classnames": "^2.3.1",
- "pg": "^8.7.1",
+  "dns": "file:./src/mock/dns",
+  "net": "file:./src/mock/net",
+  "pg": "^8.7.1",
   "psql": "0.0.1",
   "react": "^17.0.1",
   "react-dom": "^17.0.1",
   "react-router-dom": "^6.0.2",
-  "react-scripts": "1.1.1"
+  "react-scripts": "^1.1.1"
  }
 }

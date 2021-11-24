@@ -1,3 +1,5 @@
-.tyu{display:block;overflow:hidden;
-width:100%;
-flex-wrap:none;}
+.tyu{display:flex;overflow:hidden;
+width:100%;float:right;
+flex-wrap:wrap;}
+.iou{ height:40px;width:50%;margin-left:10%;}
+.oiu{border-radius:30%;width:35%;margin-top:20%;}

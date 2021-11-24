@@ -14,6 +14,25 @@ this.state={search:'*'};
 
 getproducts(search){
 //data   retur qury.src,qury,rate,query.description,query.pid
+
+const { Client } = require('pg');
+
+const client = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
+
+client.connect();
+
+client.query('SELECT * from products where description like $1;', [search+'*'],(err, res) => {
+  if (err) throw err;
+  return res.rows;
+  client.end();
+
+});
+
 console.log("query",search);
 return [{src:'er.jpg',rate:'25',description:'eer jfkljddkjfsjdfk fkjd',pid:'23'}];
 }
